@@ -29,8 +29,11 @@ Requisitos:
         
         
         ◦ agregamos el titulo de nuestro sitio
+        
         ◦ agregamos la opción de búsqueda ajax disponible mediante la Url
+        
         ◦ agregamos el archivo contenedor de la función js que consumirá la API
+        
         ◦ agregamos el archivo contenedor del estilo del sitio
         
       B) Creamos el archivo JS con la función que nos devolverá la petición que realicemos.
@@ -40,10 +43,15 @@ Requisitos:
         
         
         ◦ Creamos la variable data en la que se almacenara los datos solicitados.
+        
         ◦ creamos la función que resivira como parametro la palabra que busquemos.
+        
         ◦ En la linea 3 realizamos un get pasando la url de la api a consumir y la llave que nos da la app cundo nos registramos.
+        
         ◦ Recuperamos los datos de la consulta y la almacenamos en la variable rawstring.
+        
         ◦ Para poder manipular los datos recibidos hacemos un parse a JSON.
+        
         ◦ Ahora sacamos el titulo,año y url de los detalles de la pelicula y la mostramos por medio document.getElementById("respuesta").innerHTML. 
         
         
@@ -53,7 +61,9 @@ Requisitos:
 
         
         ◦ Cabíamos el color del cuerpo del sitio web.
-        ◦ Centramos el contenido y cambiamos el color
+        
+        ◦ Centramos el contenido y cambiamos el color.
+        
         ◦ Alineamos el contenido al centro.
 
   5. Vista
