@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html>
+<head>
     <title>API Omdb</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"> </script>
     <script type="text/javascript" src="funcion.js"></script>
-<head>
-
+    <link href="estilo.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-
+    <div id="contenedor">
+        <input onkeyup="getanswer(document.getElementById('qurybox').value)" id="qurybox">
+        <div id="answer"></div>
+    </div>
 </body>
 
 </html>

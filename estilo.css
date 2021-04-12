@@ -1,0 +1,12 @@
+body{
+    background-color: cadetblue;
+}
+
+#answer{
+    background-color: rgba(228, 245, 215, 0.49);
+    text-align: center;
+}
+
+#contenedor{
+    text-align: center;
+}
