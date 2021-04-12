@@ -1,5 +1,5 @@
 var data;
-function getanswer(q){
+function getrespuesta(q){
     $.get("http://www.omdbapi.com/?s="+q+"&apikey=ac0d05f3", function(rawdata){
         var rawstring=JSON.stringify(rawdata);
         data=JSON.parse(rawstring)
@@ -7,6 +7,8 @@ function getanswer(q){
         var year=data.Search[0].Year;
         var imdburl= "https://www.imdb.com/title/"+data.Search[0].imdbID+"/";
         var posterurl = data.Search[0].Poster;
-        document.getElementById("respuesta").innerHTML="<h1>"+titulo+"</h1><br><img src='"+posterurl+"'/><br><p>Año lanzamiento: "+year+"</p><br><p>Detalles Pelicula: <a href='"+imdburl+"' target='_blank'>"+imdburl+"</a></p>";
+        document.getElementById("respuesta").innerHTML="<h1>"+titulo+"</h1><br><img src='"+posterurl
+        +"'/><br><p>Año lanzamiento: "+year+"</p><br><p>Detalles Pelicula: <a href='"+
+        imdburl+"' target='_blank'>"+imdburl+"</a></p>";
     });
 }
